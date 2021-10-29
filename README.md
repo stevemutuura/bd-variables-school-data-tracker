@@ -59,7 +59,7 @@ Use doubles only when necessary.
 - 86 students
 - 14 teachers
 - average teacher salary 70k
-- total expenditure this year of 120672.86
+- total expenditure this year of 1206724.86
 - our total budget was 1.5mil
 - the school's name is "Red Mountain High School"
 - we have been accredited (use a boolean)
