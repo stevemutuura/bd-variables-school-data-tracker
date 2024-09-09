@@ -38,12 +38,28 @@ public class School {
     }
 
     public boolean isWithinBudget() {
-        return totalBudget > (teacherAmount * teacherAverageSalary) + (studentAmount * costPerStudent());
+//        return totalBudget > (teacherAmount * teacherAverageSalary) + (studentAmount * costPerStudent());
+        return totalBudget > totalAnnualExpenditure;
     }
 
-    public double roundtoNearestCent(double value) {
-        return ((int) value * 100) / 100.0;
+    public double roundToNearestCent(double value) {
+        return ((int)value * 100) / 100.0;
     }
+
+// test1
+// value was 19.1234567890
+// 1923.4567890
+// 1923
+// 19.23
+
+// test2
+// 19.987654321
+// 1998.7654321
+// 1998
+// 19.98
+
+// --> Manual test show that roundToNearestCent() doesn't correctly round up.
+// Often manually test your code, manual tests may have different results...
 
 
     public void main() {
@@ -57,11 +73,9 @@ Methods also store information in that they have a calculated output thus they h
  We will often have constructors(setters and getters), and then we will have regular methods....
  */
 
-
           System.out.println("Students per classroom: " + studentsPerClassroom());
-          System.out.println("Cost per student: " + roundtoNearestCent(costPerStudent()));
-          System.out.println("Cost per classroom: " + roundtoNearestCent(costPerClassroom()));
+          System.out.println("Cost per student: " + roundToNearestCent(costPerStudent()));
+          System.out.println("Cost per classroom: " + roundToNearestCent(costPerClassroom()));
     }
 }
 
-  //TODO
