@@ -1,8 +1,11 @@
 package variables;
 
+/**
+ * Application entry point that forwards to the School demo runner.
+ */
 public class App {
     public static void main(String[] args) {
 
-        new School().main();
+        School.main(args);
     }
 }
